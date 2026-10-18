@@ -9,10 +9,28 @@
 
     <style>
         :root {
-            --bg: #173a41;
+            --bg: #060704;
             --text: #fff;
             --dim: #aaa;
             --hover: #272727;
+        }
+
+        .background-image {
+            position: fixed;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        .background-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            display: block;
         }
 
         body {
@@ -167,9 +185,10 @@
 
 <body>
 
-    <div>
-        <img src="img10.png" alt="" style="position:absolute; top:0; left:0; width:100%; margin-top:-2.5%; z-index:-1;">
+    <div class="background-image">
+        <img src="img10.png" alt="">
     </div>
+
 
     <div class="title-text-container" style="margin-top:2.5%;">
         <div style="text-align:center; font-weight:bold; position:relative;">
@@ -181,30 +200,11 @@
         <text>an archive for every project I have made in the past, even unreleased builds.</text>
         <br><br>
         <text>I decided to release everything before leaving the Wither Storm community.</text>
-        <text>Please note that some of these builds may not work correctly, broken, or corrupted. I'm not going to accept any bug reports about it.</text>
+        <text>Please note that some of these builds may not work correctly, broken, or corrupted. I'm not going to
+            accept any bug reports about it.</text>
     </div>
 
     <div class="archive-folder">
-
-        <button class="folder-button" aria-expanded="false" onclick="toggleFolder(this)">
-            <span class="folder-icon">📁</span>
-            <span>CXDR</span>
-            <span class="folder-arrow">▶</span>
-        </button>
-
-        <div class="folder-content">
-            <div class="folder-content-inner">
-                <a class="archive-file" href="files/CXDR - october 25 2025.mcaddon" download>
-                    <span class="file-icon">📦</span>
-                    <span class="file-info">
-                        <span class="file-name">CXDR - october 25 2025 (.mcaddon)</span>
-                        <span class="file-description">a tester build released on October 25th, 2025.</span>
-                    </span>
-                    <span class="download-icon">↓</span>
-                </a>
-
-            </div>
-        </div>
 
         <button class="folder-button" aria-expanded="false" onclick="toggleFolder(this)">
             <span class="folder-icon">📁</span>
@@ -271,7 +271,27 @@
 
             </div>
         </div>
-        
+
+        <button class="folder-button" aria-expanded="false" onclick="toggleFolder(this)">
+            <span class="folder-icon">📁</span>
+            <span>CXDR</span>
+            <span class="folder-arrow">▶</span>
+        </button>
+
+        <div class="folder-content">
+            <div class="folder-content-inner">
+                <a class="archive-file" href="files/CXDR - october 25 2025.mcaddon" download>
+                    <span class="file-icon">📦</span>
+                    <span class="file-info">
+                        <span class="file-name">CXDR - october 25 2025 (.mcaddon)</span>
+                        <span class="file-description">a tester build released on October 25th, 2025.</span>
+                    </span>
+                    <span class="download-icon">↓</span>
+                </a>
+
+            </div>
+        </div>
+
         <button class="folder-button" aria-expanded="false" onclick="toggleFolder(this)">
             <span class="folder-icon">📁</span>
             <span>Other Projects</span>
@@ -284,7 +304,8 @@
                     <span class="file-icon">📦</span>
                     <span class="file-info">
                         <span class="file-name">0.4.5-ify (.mcaddon)</span>
-                        <span class="file-description">This project aims to recreate the original 0.4.5 version of CWSBP on top of the 0.4.8.5 (currently the latest) build of CWSBP.</span>
+                        <span class="file-description">This project aims to recreate the original 0.4.5 version of CWSBP
+                            on top of the existing 0.4.8.5 (currently the latest) build of CWSBP.</span>
                     </span>
                     <span class="download-icon">↓</span>
                 </a>
@@ -293,7 +314,8 @@
                     <span class="file-icon">📦</span>
                     <span class="file-info">
                         <span class="file-name">0.4-ify (.mcaddon)</span>
-                        <span class="file-description">This project aims to recreate the original 0.4 version of CWSBP on top of the 0.4.8.5 (currently the latest) build of CWSBP.</span>
+                        <span class="file-description">This project aims to recreate the original 0.4 version of CWSBP
+                            on top of the existing 0.4.8.5 (currently the latest) build of CWSBP.</span>
                     </span>
                     <span class="download-icon">↓</span>
                 </a>
@@ -302,7 +324,10 @@
                     <span class="file-icon">📦</span>
                     <span class="file-info">
                         <span class="file-name">0.3.9-ify (.mcaddon)</span>
-                        <span class="file-description">a bit of a history on this project; This project was made to recreate the pre-release version of 0.4 that included the real distant rendering heads, and some remnants of 0.3.5. The add-on itself isn't really as stable so it is recommended to not use this add-on on a world that you care about.</span>
+                        <span class="file-description">a bit of a history on this project; This project was made to
+                            recreate the pre-release version of 0.4 that included the real distant rendering heads, and
+                            some remnants of 0.3.5. The add-on itself isn't really as stable so it is recommended to not
+                            use this add-on on a world that you care about.</span>
                     </span>
                     <span class="download-icon">↓</span>
                 </a>
@@ -311,7 +336,8 @@
                     <span class="file-icon">📦</span>
                     <span class="file-info">
                         <span class="file-name">0.3.5-ify (.mcaddon)</span>
-                        <span class="file-description">This project aims to recreate the original 0.3.5 version of CWSBP on top of the 0.4.8.5 (currently the latest) build of CWSBP.</span>
+                        <span class="file-description">This project aims to recreate the original 0.3.5 version of CWSBP
+                            on top of the existing 0.4.8.5 (currently the latest) build of CWSBP.</span>
                     </span>
                     <span class="download-icon">↓</span>
                 </a>
