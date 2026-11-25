@@ -97,7 +97,6 @@
     .status-dot {
       width: 7px;
       height: 7px;
-      border-radius: 50%;
       background: var(--green);
       box-shadow: 0 0 12px rgba(167, 131, 215, 0.6);
       flex: 0 0 auto;
@@ -109,10 +108,7 @@
       margin: 26px 0 18px;
       padding: clamp(24px, 5vw, 54px);
       border: 1px solid var(--line-strong);
-      border-radius: 18px;
       box-shadow: 0 24px 80px rgba(0, 0, 0, .22);
-      backdrop-filter: blur(18px);
-      -webkit-backdrop-filter: blur(18px);
       overflow: hidden;
     }
 
@@ -192,8 +188,6 @@
       padding: 19px 20px;
       margin-bottom: 18px;
       border: 1px solid var(--line);
-      border-radius: 12px;
-      backdrop-filter: blur(14px);
       background: rgba(13, 10, 15, 0.356);
     }
 
@@ -203,7 +197,6 @@
       width: 34px;
       height: 34px;
       border: 1px solid var(--line-strong);
-      border-radius: 9px;
       color: var(--accent);
       font: 16px var(--mono);
     }
@@ -238,7 +231,6 @@
     .info-dot {
       width: 7px;
       height: 7px;
-      border-radius: 2px;
     }
 
     .info-dot.red {
@@ -283,7 +275,6 @@
       min-height: 44px;
       padding: 10px 14px 10px 40px;
       border: 1px solid var(--line-strong);
-      border-radius: 10px;
       outline: none;
       color: var(--text);
       background: rgba(12, 10, 15, 0.85);
@@ -302,7 +293,6 @@
     .toolbar-button {
       padding: 0 15px;
       border: 1px solid var(--line-strong);
-      border-radius: 10px;
       color: #cfc9d5;
       background: rgba(18, 15, 21, 0.85);
       cursor: pointer;
@@ -319,10 +309,7 @@
       margin: 12px 0;
       overflow: hidden;
       border: 1px solid var(--line-strong);
-      border-radius: 13px;
       background: rgba(13, 10, 15, 0.356);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
       transition: border-color .2s;
     }
 
@@ -360,7 +347,6 @@
       height: 42px;
       flex: 0 0 auto;
       border: 1px solid rgba(188, 166, 214, 0.22);
-      border-radius: 10px;
       color: var(--accent);
       background: rgba(45, 36, 62, 0.42);
       font-size: 20px;
@@ -389,7 +375,6 @@
       margin-left: auto;
       padding: 5px 8px;
       border: 1px solid var(--line);
-      border-radius: 6px;
       color: #ada8b7;
       font: 10px var(--mono);
       white-space: nowrap;
@@ -465,7 +450,6 @@
       height: 38px;
       flex: 0 0 auto;
       border: 1px solid var(--line);
-      border-radius: 7px;
       color: var(--accent);
       background: rgba(255, 255, 255, .025);
       font: 30px var(--mono);
@@ -503,7 +487,6 @@
       width: fit-content;
       padding: 4px 7px;
       border: 1px solid currentColor;
-      border-radius: 5px;
       font: 9px var(--mono);
       letter-spacing: .045em;
       white-space: nowrap;
@@ -513,7 +496,6 @@
       content: "";
       width: 5px;
       height: 5px;
-      border-radius: 50%;
       background: currentColor;
     }
 
@@ -597,7 +579,7 @@
 
       .hero {
         margin-top: 18px;
-        border-radius: 14px;
+
       }
 
       .hero-description {
@@ -799,6 +781,13 @@
                     class="file-name">Amulet+ V0.3.5 — May 9, 2025</span><span class="file-description">A tester build
                     released on May 9th, 2025.</span></span></span>
               <span class="file-date">2025-05-09 · MCADDON</span><span class="status orange">UNSTABLE</span><span
+                class="download-icon" aria-label="Download">↓</span>
+            </a>
+            <a class="archive-file" href="files/Amulet+V1.5 - april 19 2025.mcaddon" download data-status="red">
+              <span class="file-main"><span class="file-symbol">▰</span><span class="file-info"><span
+                    class="file-name">Amulet+ V0.3.5 — April 19, 2025</span><span class="file-description">A tester
+                    build released on April 19th, 2025.</span></span></span>
+              <span class="file-date">2025-04-19 · MCADDON</span><span class="status red">VERY UNSTABLE</span><span
                 class="download-icon" aria-label="Download">↓</span>
             </a>
             <a class="archive-file" href="files/Amulet+V1.5 - april 17 2025.mcaddon" download data-status="red">
